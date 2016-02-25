@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="istyle.css">
+    <link rel="stylesheet" href="my.css">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12" style="margin: 5px">
+            <!--<h1 class="text-info">Alerting Tools</h1>-->
+        </div>
+        <div class="span12">
+            <div class="row-fluid">
+                <div class="span1" style="padding-top: 5px">
+                    部门名称：
+                </div>
+                <div class="span2">
+                    <input type="text" id="d_name" maxlength="80" align="left">
+                </div>
+                <div class="span1">
+                    <button class="btn btn-primary" onclick="searchdeptname()">查询</button>
+                </div>
+                <div class="span1" style="padding-top: 5px">
+                    部门总监：
+                </div>
+                <div class="span2">
+                    <input type="text" id="d_owner" maxlength="30">
+                </div>
+                <div class="span1">
+                    <button class="btn btn-primary" onclick="searchdeptowner()">查询</button>
+                </div>
+                <div class="span2" align="right">
+                    <button class="btn btn-primary" onclick="searchdept()">查询全部</button>
+                </div>
+                <div class="span1">
+                    <button class="btn btn-primary" onclick="newdept()">创建</button>
+                </div>
+            </div>
+        </div>
+
+        <!--<form class="form-inline">-->
+        <!--项目名称：&nbsp;<input type="text" id="s_name" autocomplete="on"/>-->
+        <!--项目类型：&nbsp;<input type="text" id="s_type" autocomplete="on"/>-->
+        <!--项目阶段：&nbsp;-->
+        <!--<select id="s_jd">-->
+        <!--<option value="0">全部</option>-->
+        <!--<option value="1">规划中</option>-->
+        <!--<option value="2">进行中</option>-->
+        <!--</select>-->
+        <!--项目状态：&nbsp;-->
+        <!--<select id="s_status">-->
+        <!--<option value="0">全部</option>-->
+        <!--<option value="1">正常</option>-->
+        <!--<option value="2">延期</option>-->
+        <!--</select>-->
+        <!--</form>-->
+    </div>
+</div>
+<div class="span12"></div>
+<div class="container-fluid">
+    <table id="tabdept" class="table table-bordered table-hover table-striped">
+        <thead>
+        <tr>
+            <th width="15%">部门ID</th>
+            <th width="20%">部门名称</th>
+            <th width="20%">部门总监</th>
+            <th width="20%">创建人</th>
+            <th width="15%">操作</th>
+        </tr>
+        </thead>
+        <tbody style="height: 1000px"></tbody>
+    </table>
+    <div id="divpage"></div>
+</div>
+
+
+<script src="JSON.js"></script>
+<script src="JSON2.js"></script>
+<script src="jquery191.js"></script>
+<script src="di.js"></script>
+</body>
+</html>
