@@ -89,7 +89,7 @@ function searchdept(){
 //            split = '&'
 //        }
 //    }
-    var murl = "http://192.168.80.30:8080/me.ele.pmo.pms.api/department/queryall" ;
+    var murl = "http://vpca-pmo-api-1.vm.elenet.me/pmo.api/department/queryall" ;
 //    var xmlHttpReq = new xmlHttpRequest();
     var xmlHttpReq = null;
     if (window.XMLHttpRequest) {

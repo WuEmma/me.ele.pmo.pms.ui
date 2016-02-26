@@ -24,7 +24,7 @@ $(document).ready(function(data){
 ////获取参数a的值
 //    alert($.getUrlVar('id'));
     var idnum = $.getUrlVar('id');
-    var url = "http://192.168.80.30:8080/me.ele.pmo.pms.api/department/getbydepartmentid/" + idnum;
+    var url = "http://vpca-pmo-api-1.vm.elenet.me/pmo.api/department/getbydepartmentid/" + idnum;
     $.get(url,function(data){
         var result = eval('('+ data + ')');
         $("#de_id").val(result.resultMsg.departmentId);
@@ -46,7 +46,7 @@ function updatedept(){
     editJSON.departmentOwner = u_owner;
     editJSON.updatedBy = u_updateby;
     var request = {
-        url : "http://192.168.80.30:8080/me.ele.pmo.pms.api/department/updatedepartment",
+        url : "http://vpca-pmo-api-1.vm.elenet.me/pmo.api/department/updatedepartment",
         type : "POST",
         contentType : "application/json",
         dataType : 'json',
