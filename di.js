@@ -151,7 +151,7 @@ function searchdeptname(){
     else {
 
         $.get(
-            'http://192.168.80.30:8080/me.ele.pmo.pms.api/department/getbydepartmentname/' + vname,
+            'http://vpca-pmo-api-1.vm.elenet.me/pmo.api/department/getbydepartmentname/' + vname,
             {},
             function (data) {
                 var vdata = eval('('+data+')');
